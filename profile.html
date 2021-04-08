@@ -5,21 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile | meegram</title>
-  <script src="//code.jquery.com/jquery-1.11.0.min.js">
-</script>
-<script type="text/javascript">   
-$(document).ready( function() {
-					$("#navigation").load("navigation.html");  //네비게이션 인클루드
-								}
-					);
-</script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   
 </head>
 </head>
 <body>
-  <div id="navigation"></div>
+  <!-- 네비게이션 -->
+  <nav class="navigation">
+    <div class="navigation__column">
+        <a href="feed.html">
+            <!-- Master branch comment -->
+            <img src="images/logo.png" />
+        </a>
+    </div>
+    <div class="navigation__column">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="navigation__column">
+        <ul class="navigations__links">
+            <li class="navigation__list-item">
+                <a href="explore.html" class="navigation__link">
+                    <i class="fa fa-compass fa-lg"></i>
+                </a>
+            </li>
+            <li class="navigation__list-item">
+                <a href="#" class="navigation__link">
+                    <i class="fa fa-heart-o fa-lg"></i>
+                </a>
+            </li>
+            <li class="navigation__list-item">
+                <a href="profile.html" class="navigation__link">
+                    <i class="fa fa-user-o fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+  </nav>  
+  
   <!-- 프로필 -->
   <main id="profile">
       <header class="profile__header">
@@ -56,63 +80,64 @@ $(document).ready( function() {
       </header>
       <!-- 프로필포토 -->
       <section class="profile__photos">
-        <div class="profile__photo">
-          <img src="images/feedPhoto.jpg" alt="피드이미지">
-            <div class="profile__photo-overlay">
-                <span class="overlay__item">
-                    <i class="fa fa-heart"></i>
-                    486
-                </span>
-                <span class="profile__photo-overlay">
-                  <i class="fa fa-comment"></i>
-                  344
-                </span>
-            </div>
-        </div>
+          <div class="profile__photo">
+              <img src="images/feedPhoto.jpg" alt="피드이미지"/>
+              <div class="profile__photo-overlay">
+                  <span class="overlay__item">
+                      <i class="fa fa-heart"></i>
+                      486
+                  </span>
+                  <span class="overlay__item">
+                    <i class="fa fa-comment"></i>
+                    344
+                  </span>
+              </div>
+          </div>
 
-        <div class="profile__photo">
-          <img src="images/feedPhoto.jpg" alt="피드이미지">
-            <div class="profile__photo-overlay">
-                <span class="overlay__item">
-                    <i class="fa fa-heart"></i>
-                    486
-                </span>
-                <span class="profile__photo-overlay">
-                  <i class="fa fa-comment"></i>
-                  344
-                </span>
-            </div>
-        </div>
+          <div class="profile__photo">
+              <img src="images/feedPhoto.jpg" alt="피드이미지"/>
+              <div class="profile__photo-overlay">
+                  <span class="overlay__item">
+                      <i class="fa fa-heart"></i>
+                      486
+                  </span>
+                  <span class="overlay__item">
+                    <i class="fa fa-comment"></i>
+                    344
+                  </span>
+              </div>
+          </div>
 
-        <div class="profile__photo">
-          <img src="images/feedPhoto.jpg" alt="피드이미지">
-            <div class="profile__photo-overlay">
-                <span class="overlay__item">
-                    <i class="fa fa-heart"></i>
-                    486
-                </span>
-                <span class="profile__photo-overlay">
-                  <i class="fa fa-comment"></i>
-                  344
-                </span>
-            </div>
-        </div>
+          <div class="profile__photo">
+              <img src="images/feedPhoto.jpg" alt="피드이미지"/>
+              <div class="profile__photo-overlay">
+                  <span class="overlay__item">
+                      <i class="fa fa-heart"></i>
+                      486
+                  </span>
+                  <span class="overlay__item">
+                    <i class="fa fa-comment"></i>
+                    344
+                  </span>
+              </div>
+          </div>
 
-        <div class="profile__photo">
-          <img src="images/feedPhoto.jpg" alt="피드이미지">
-            <div class="profile__photo-overlay">
-                <span class="overlay__item">
-                    <i class="fa fa-heart"></i>
-                    486
-                </span>
-                <span class="profile__photo-overlay">
-                  <i class="fa fa-comment"></i>
-                  344
-                </span>
-            </div>
-        </div>
+    <div class="profile__photo">
+      <img src="images/feedPhoto.jpg" alt="피드이미지"/>
+      <div class="profile__photo-overlay">
+          <span class="overlay__item">
+              <i class="fa fa-heart"></i>
+              486
+          </span>
+          <span class="overlay__item">
+            <i class="fa fa-comment"></i>
+            344
+          </span>
+      </div>
+    </div>
       </section>
   </main>
+  <!-- footer -->
   <footer class="footer">
     <div class="footer__column">
         <nav class="footer__nav">
